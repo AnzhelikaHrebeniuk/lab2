@@ -13,7 +13,7 @@ public class ExceptionManagerImpl implements ExceptionManager {
 	
 	public ExceptionManagerImpl(Server server, ExceptionAnalyzer exceptionAnalyzer) {
 		this.server = server;
-		this.exceptionAnalyzer = exceptionAnalyzer;
+
 	}
 	
 	@Override
