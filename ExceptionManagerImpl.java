@@ -18,6 +18,7 @@ public class ExceptionManagerImpl implements ExceptionManager {
 	
 	@Override
 	public void handle(Exception exception) {
+                ExceptionAnalyzer exceptionAnalyzer = ExceptionAnalyzerFactory.create();
 		boolean isCritical = exceptionAnalyzer.isCritical(exception);
 		if (isCritical)
 			criticalExceptionsCount++;
